@@ -51,10 +51,11 @@ svg2.append("g")
    .attr("transform", "translate(0," + height + ")")
    .attr("class", "axisgrey")
    .call(d3.axisBottom(xScale3)
-           .ticks(15));
+    .ticks(15));
 svg2.append("g")
    .attr("class", "axisgrey")
-   .call(d3.axisLeft(yScale3));
+   .call(d3.axisLeft(yScale3)
+    .ticks(6));
 
 svg2.append("path")
 .datum(data)

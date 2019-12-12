@@ -1,8 +1,8 @@
 name,parent,value
 Origin,,
-Machine,Origin,50.75
+Technologies,Origin,50.75
 Textile,Origin,8.12
 Metal,Origin,7.07
-Miscellaneous,Origin,6.74
-Chemical Product,Origin,5.43
+Misc,Origin,6.74
+Chemical Products,Origin,5.43
 Others,Origin,21.89

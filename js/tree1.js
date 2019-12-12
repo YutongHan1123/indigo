@@ -70,14 +70,15 @@ svg.selectAll("text")
    .text(function(d){ return d.data.name})
    .attr("font-size", "14px")
    .attr("fill", "#205e8a")
+   .style("position", "relative")
    .style("font-family", "'Source Sans Pro', sans-serif");
 
 //title
 svg.append("text")
  .attr("x", window.innerWidth*0.025)
  .attr("y", -window.innerHeight*0.03)
- .text("The Top 5 Exports of China in 1962")
- .style("font-size", "25px")
+ .text("The Top 5 Exports from China to the World in 1962")
+ .style("font-size", "18px")
  .style("fill", "#205e8a")
  .style("font-family", "'Fredoka One', cursive")
  .style("font-weight", "lighter")

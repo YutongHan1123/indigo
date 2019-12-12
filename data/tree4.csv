@@ -1,8 +1,8 @@
 name,parent,value
 Origin,,
-Machine,Origin,24.94
-Transportation,Origin,11.36
-Chemical Product,Origin,10.96
-Mineral Product,Origin,10.74
-Instrument,Origin,9.15
+Technologies,Origin,24.94
+Transportations,Origin,11.36
+Chemical Products,Origin,10.96
+Mineral Products,Origin,10.74
+Instruments,Origin,9.15
 Others,Origin,32.85

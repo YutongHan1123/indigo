@@ -1,3 +1,5 @@
+
+
 /* sticky */
 h1 {
  position: sticky;
@@ -106,20 +108,23 @@ body {
 #title {
   text-align: center;
   color: white;
-  font-size: 100px;
-  padding-top: 450px;
-  padding-bottom: 50px;
-  font-family: 'Fredoka One', cursive;
+  font-size: 120px;
+  padding-top: 80px;
+  /* padding-bottom: 50px; */
+  font-family: 'Mansalva', cursive;
   font-weight: lighter;
 }
-.author p{
-  margin-top: 250px;
+
+.author {
   text-align: center;
-  padding-bottom: 80px;
+}
+.author p{
+  padding-top: 250px;
+  /* padding-bottom: 80px; */
   color: #205e8a;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Mansalva', cursive;
 }
 
 @keyframes dropdown {
@@ -148,7 +153,7 @@ body {
 span {
     display: inline-block; /* change the display type           */
     text-shadow: 8px 8px #205e8a;
-    margin: 3px 0;
+    /* margin: -100px 0; */
     color: #fad469;
     font-weight: bold;        /* apply the needed vertical margins */
 }
@@ -156,7 +161,8 @@ span {
   text-align: center;
   font-size: 50px;
   padding-top: 70px;
-  font-family: 'Fredoka One', cursive;
+  padding-bottom: 140px;
+  font-family: 'Mansalva', cursive;
 }
 .subtitle {
   color: #205e8a;
@@ -168,6 +174,7 @@ span {
   font-size: 60px;
   text-shadow: 5px 5px #fad469;
   color: #205e8a;
+  padding-bottom: 0px;
 }
 
 .A {  animation-delay: 2.2s;
@@ -226,6 +233,7 @@ span {
   width: 100%;
   padding-left: 31.5%;
   padding-right: 31.5%;
+  /* max-width: 600px; */
   padding-top: 3%;
   /* height: 300px;  */
 }
@@ -334,8 +342,8 @@ margin: auto;
 }
 .select {
   color: #454544;
-  font-size: 20px;
-  font-family: 'Alegreya Sans SC';
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
   text-shadow: none;
   font-weight: normal;
 }
@@ -350,11 +358,13 @@ h1 {
 
 h2 {
   color: #205e8a;
-  font-family: 'Fredoka One', cursive;
-  font-size: 28px;
+  font-family: 'Mansalva', cursive;
+  font-size: 35px;
   font-weight: lighter;
   line-height: 32px;
-  margin: 0 0 24px; }
+  margin: 0 0 24px;
+  text-align: center;
+}
 
 .subheader {
   font-size: 26px;
@@ -367,7 +377,8 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   line-height: 32px;
-  margin: 0 0 24px; }
+  margin: 0 0 24px;
+  text-align: justify; }
 
 a {
   color: #ff9900;
@@ -379,18 +390,31 @@ a:hover { color: #ffcc66 }
 
 /* indigo */
 .bein{
-  font-size: 25px;
+  font-size: 40px;
   color: #205e8a;
   text-shadow: none;
   font-weight: normal;
+  font-family: 'Mansalva', cursive;
 }
 
 /* simg */
 .simg{
-  max-width: 400px;
-  font-size: 13px;
+  max-width: 500px;
   padding-top: -5px;
   text-align: center;
+  border:1px groove #878787;
+}
+.simgp{
+  max-width: 500px;
+  font-size: 15px;
+  padding-top: -5px;
+  text-align: center;
+}
+.simg1{
+  width: 600px;
+  padding-top: -5px;
+  text-align: center;
+  border:1px groove #878787;
 }
 .simg2{
   max-height: 250px;
@@ -403,7 +427,8 @@ a:hover { color: #ffcc66 }
 .simg3{
   max-height: 250px;
   font-size: 13px;
-  padding-top: 10px;
-  padding-bottom: -10px;
   line-height: 1.5em;
+  background-color: #fad469;
+  padding: 40px;
+  margin-bottom: 80px;
 }
