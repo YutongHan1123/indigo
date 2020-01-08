@@ -1,14 +1,14 @@
-var margin = {top: 60, right: 20, bottom: 20, left: 40},
-  width = window.innerWidth/3 - margin.left - margin.right,
-  height = window.innerHeight/2.2 - margin.top - margin.bottom;
+var margin03 = {top: 60, right: 40, bottom: 20, left: 40},
+  width = window.innerWidth/3 - margin03.left - margin03.right,
+  height = window.innerHeight/2.2 - margin03.top - margin03.bottom;
 
 // append the svg object to the body of the page
 var svg3 = d3.select("#dog")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
+            .attr("width", width + margin03.left + margin03.right)
+            .attr("height", height + margin03.top + margin03.bottom)
             .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin03.left + "," + margin03.top + ")");
 
 // Read data
 d3.csv('./data/tree3.csv', function(data) {
@@ -65,7 +65,7 @@ console.log(root3.leaves())
       .text(function(d){ return d.data.name})
       .attr("font-size", "14px")
       .attr("fill", "white")
-      .style("font-family", "'Source Sans Pro', sans-serif");
+      .style("font-family", "'Mansalva', cursive");
 
 //title
 svg3.append("text")
@@ -74,7 +74,7 @@ svg3.append("text")
  .text("The Top 5 Exports from China to the World in 2018")
  .style("font-size", "18px")
  .style("fill", "#205e8a")
- .style("font-family", "'Fredoka One', cursive")
+ .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")
  .attr("alignment-baseline","middle");
 })

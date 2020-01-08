@@ -1,6 +1,6 @@
-var margin = {top: 0, right: 20, bottom: 20, left: 40};
-var width2 = window.innerWidth*0.58 - margin.left - margin.right; // Use the window's width
-var height = window.innerHeight/2 - margin.top - margin.bottom; // Use the window's height
+var margin2 = {top: 0, right: 100, bottom: 20, left: 100};
+var width2 = window.innerWidth - margin2.left - margin2.right; // Use the window's width
+var height = window.innerHeight/2 - margin2.top - margin2.bottom; // Use the window's height
 
 var parseTime = d3.timeParse("%Y")
    bisectDate = d3.bisector(function(d) { return d.year; }).left;
@@ -37,10 +37,10 @@ var line7 = d3.line()
 
 var svg2 = d3.select("#cat")
         .append("svg")
-        .attr("width", width2 + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("width", width2 + margin2.left + margin2.right)
+        .attr("height", height + margin2.top + margin2.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
 var div = d3.select("body").append("div")
             .attr("class", "tooltip")
@@ -51,7 +51,7 @@ svg2.append("g")
    .attr("transform", "translate(0," + height + ")")
    .attr("class", "axisgrey")
    .call(d3.axisBottom(xScale3)
-    .ticks(15));
+    .ticks(10));
 svg2.append("g")
    .attr("class", "axisgrey")
    .call(d3.axisLeft(yScale3)
@@ -112,7 +112,7 @@ svg2.append("text")
    .text("China")
    .style("font-size", "20px")
    .style("fill", "#205e8a")
-   .style("font-family", "'Fredoka One', cursive")
+   .style("font-family", "'Mansalva', cursive")
    .style("font-weight", "lighter")
    .attr("alignment-baseline","middle");
 
@@ -122,7 +122,7 @@ svg2.append("text")
   .text("USA")
   .style("font-size", "20px")
   .style("fill", "#878787")
-  .style("font-family", "'Fredoka One', cursive")
+  .style("font-family", "'Mansalva', cursive")
   .style("font-weight", "lighter")
   .attr("alignment-baseline","middle");
 
@@ -130,11 +130,11 @@ svg2.append("text")
 //title
 svg2.append("text")
   .attr("x", window.innerWidth*0.1)
-  .attr("y", window.innerHeight*0.01)
+  .attr("y", window.innerHeight*0.015)
   .text("The Exports of China and USA to the World")
   .style("font-size", "25px")
   .style("fill", "#205e8a")
-  .style("font-family", "'Fredoka One', cursive")
+  .style("font-family", "'Mansalva', cursive")
   .style("font-weight", "lighter")
   .attr("alignment-baseline","middle");
 
@@ -144,7 +144,7 @@ svg2.append("text")
    .attr("y", 10)
    .text("Unit: Billion Dollar")
    .style("font-size", "12px")
-   .style("font-family", "'Fredoka One', cursive")
+   .style("font-family", "'Mansalva', cursive")
    .style("font-weight", "lighter")
    .style("fill", "#878787")
    .attr("alignment-baseline","middle");
@@ -154,10 +154,10 @@ svg2.append("text")
 // const annotations2 = [{
 //           note: { label: "2008 Financial Crisis", wrap: 120 },
 //           subject: {
-//             y1: margin.top*18 ,
-//             y2: height + margin.bottom
+//             y1: margin2.top*18 ,
+//             y2: height + margin2.bottom
 //           },
-//           y: margin.top*18,
+//           y: margin2.top*18,
 //           data: { x: "2008"} //position the x based on an x scale
 //         }]
 

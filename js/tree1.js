@@ -1,14 +1,14 @@
-var margin = {top: 80, right: 20, bottom: 20, left: 40},
-  width = window.innerWidth/3 - margin.left - margin.right,
-  height = window.innerHeight/2.2 - margin.top - margin.bottom;
+var margin01 = {top: 80, right: 40, bottom: 20, left: 40},
+  width = window.innerWidth/3 - margin01.left - margin01.right,
+  height = window.innerHeight/2.2 - margin01.top - margin01.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#dog")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
+            .attr("width", width + margin01.left + margin01.right)
+            .attr("height", height + margin01.top + margin01.bottom)
             .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin01.left + "," + margin01.top + ")");
 
 //Tooltip
 var tooltip = d3.select("body").append("div")
@@ -71,7 +71,7 @@ svg.selectAll("text")
    .attr("font-size", "14px")
    .attr("fill", "#205e8a")
    .style("position", "relative")
-   .style("font-family", "'Source Sans Pro', sans-serif");
+   .style("font-family", "'Mansalva', cursive");
 
 //title
 svg.append("text")
@@ -80,7 +80,7 @@ svg.append("text")
  .text("The Top 5 Exports from China to the World in 1962")
  .style("font-size", "18px")
  .style("fill", "#205e8a")
- .style("font-family", "'Fredoka One', cursive")
+ .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")
  .attr("alignment-baseline","middle");
 })
