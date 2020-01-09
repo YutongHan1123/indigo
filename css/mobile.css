@@ -60,7 +60,7 @@
   text-align: center;
 }
 .simg1{
-  width: 600px;
+  width: 400px;
   padding-top: -5px;
   text-align: center;
   border:1px groove #878787;
@@ -90,5 +90,10 @@
 .simg4p{
   font-size: 15px;
   padding-top: -10px;
+}
+.simg5{
+  width: 400px;
+  padding-top: -5px;
+  text-align: center;
 }
 }
