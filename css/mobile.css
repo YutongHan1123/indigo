@@ -48,19 +48,19 @@
 
 @media only screen and (max-width: 960px) {
 .simg{
-  max-width: 400px;
+  max-width: 90%;
   padding-top: -5px;
   text-align: center;
   border:1px groove #878787;
 }
 .simgp{
-  max-width: 500px;
+  max-width: 95%;
   font-size: 15px;
   padding-top: -5px;
   text-align: center;
 }
 .simg1{
-  width: 400px;
+  width: 90%;
   padding-top: -5px;
   text-align: center;
   border:1px groove #878787;
@@ -92,7 +92,7 @@
   padding-top: -10px;
 }
 .simg5{
-  width: 400px;
+  width: 90%;
   padding-top: -5px;
   text-align: center;
 }
