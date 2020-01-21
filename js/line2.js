@@ -1,6 +1,6 @@
 var margin2 = {top: 0, right: 100, bottom: 20, left: 100};
 var width2 = window.innerWidth - margin2.left - margin2.right; // Use the window's width
-var height = window.innerHeight/2 - margin2.top - margin2.bottom; // Use the window's height
+var height = window.innerHeight/2 - margin1.top - margin1.bottom; // Use the window's height
 
 var parseTime = d3.timeParse("%Y")
    bisectDate = d3.bisector(function(d) { return d.year; }).left;
@@ -130,7 +130,7 @@ svg2.append("text")
 //title
 svg2.append("text")
   .attr("x", window.innerWidth*0.1)
-  .attr("y", window.innerHeight*0.015)
+  .attr("y", window.innerHeight*0.02)
   .text("The Exports of China and USA to the World")
   .style("font-size", "25px")
   .style("fill", "#205e8a")
