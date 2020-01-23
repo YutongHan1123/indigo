@@ -1,4 +1,4 @@
-var margin2 = {top: 0, right: 100, bottom: 20, left: 100};
+var margin2 = {top: 0, right: window.innerWidth*0.2, bottom: 20, left: window.innerWidth*0.2};
 var width2 = window.innerWidth - margin2.left - margin2.right; // Use the window's width
 var height = window.innerHeight/2 - margin1.top - margin1.bottom; // Use the window's height
 
@@ -107,8 +107,8 @@ fixeddot3.attr("cx", function (d) {
 //                   .attr("r", 6)
 //                   .style("fill", "#3fc5f0");
 svg2.append("text")
-   .attr("x", window.innerWidth*0.3)
-   .attr("y", window.innerHeight*0.2)
+   .attr("x", window.innerWidth*0.45)
+   .attr("y", window.innerHeight*0.3)
    .text("China")
    .style("font-size", "20px")
    .style("fill", "#205e8a")
@@ -117,8 +117,8 @@ svg2.append("text")
    .attr("alignment-baseline","middle");
 
 svg2.append("text")
-  .attr("x", window.innerWidth*0.45)
-  .attr("y", window.innerHeight*0.2)
+  .attr("x", window.innerWidth*0.1)
+  .attr("y", window.innerHeight*0.3)
   .text("USA")
   .style("font-size", "20px")
   .style("fill", "#878787")

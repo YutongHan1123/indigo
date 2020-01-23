@@ -1,4 +1,4 @@
-var margin03 = {top: 60, right: 40, bottom: 20, left: 40},
+var margin03 = {top: 70, right: window.innerWidth*0.025, bottom: 20, left: window.innerWidth*0.025},
   width = window.innerWidth/3 - margin03.left - margin03.right,
   height = window.innerHeight/2.2 - margin03.top - margin03.bottom;
 
@@ -69,10 +69,10 @@ console.log(root3.leaves())
 
 //title
 svg3.append("text")
- .attr("x", window.innerWidth*0.025)
- .attr("y", -window.innerHeight*0.03)
+ .attr("x", window.innerWidth*0.0005)
+ .attr("y", -window.innerHeight*0.02)
  .text("The Top 5 Exports from China to the World in 2018")
- .style("font-size", "18px")
+ .style("font-size", "22px")
  .style("fill", "#205e8a")
  .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")

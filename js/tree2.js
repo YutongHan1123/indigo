@@ -1,4 +1,4 @@
-var margin02 = {top: 80, right: 40, bottom: 20, left: 40},
+var margin02 = {top: 80, right: window.innerWidth*0.025, bottom: 20, left: window.innerWidth*0.025},
   width = window.innerWidth/3 - margin02.left - margin02.right,
   height = window.innerHeight/2.2 - margin02.top - margin02.bottom;
 var svg2 = d3.select("#dog")
@@ -74,10 +74,10 @@ d3.csv('./data/tree2.csv', function(data) {
 
 //title
 svg2.append("text")
- .attr("x", window.innerWidth*0.03)
- .attr("y", -window.innerHeight*0.03)
+ .attr("x", window.innerWidth*0.0005)
+ .attr("y", -window.innerHeight*0.02)
  .text("The Top 5 Exports from USA to the World in 1962")
- .style("font-size", "18px")
+ .style("font-size", "22px")
  .style("fill", "#878787")
  .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")

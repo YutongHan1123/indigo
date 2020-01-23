@@ -1,4 +1,4 @@
-var margin1 = {top: 20, right: 100, bottom: 20, left: 100};
+var margin1 = {top: 20, right: window.innerWidth*0.1, bottom: 20, left: window.innerWidth*0.1};
 var width1 = window.innerWidth - margin1.left - margin1.right;
 var height = window.innerHeight/2 - margin1.top - margin1.bottom;
 
@@ -119,8 +119,8 @@ fixeddot.attr("cx", function (d) {
 //                   .attr("r", 6)
 //                   .style("fill", "#3fc5f0");
 svg.append("text")
-   .attr("x", window.innerWidth*0.578)
-   .attr("y", window.innerHeight*0.2)
+   .attr("x", window.innerWidth*0.1)
+   .attr("y", window.innerHeight*0.34)
    .text("Cotton")
    .style("font-size", "20px")
    .style("font-family", "'Mansalva', cursive")
@@ -129,7 +129,7 @@ svg.append("text")
    .attr("alignment-baseline","middle");
 
 svg.append("text")
-  .attr("x", window.innerWidth*0.53)
+  .attr("x", window.innerWidth*0.45)
   .attr("y", window.innerHeight*0.32)
   .text("Wool")
   .style("font-size", "20px")
